@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //m-1 to make array
+        let arr = [1, 2, 3, 4, 5];
+        console.log(arr);
+
+        //m-2 to make array
+        let arr2 = new Array(1, 3, 4, 5);
+        console.log(arr2);
+
+        //to get some part of array
+        console.log(arr.slice(1, 3)); // Outputs: [2, 3] // from index 1 to index 3 (excluding index 3)
+        console.log(arr.slice(-4, -1)); // Outputs: [2, 3, 4] // negative indices count from end
+
+
+        //splice is to add array at particular index and the next indexes would be shifted to right
+        //array.splice(start index, end index, item1, ....., itemX)
+        arr2.splice(1, 1, 10, 12)
+        console.log(arr2); ; // removes the array from st index to end index and adds the rest part //outputs: [ 3, 4, 5 ]
+
+
+    </script>
+</body>
+</html>

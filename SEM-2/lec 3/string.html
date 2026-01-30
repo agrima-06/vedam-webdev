@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let str = "hi agrima"
+        console.log(str.length); // Outputs: 10
+
+        console.log(str[0]); // Outputs: h
+
+        console.log(str.charAt(3)); // Outputs: a
+        console.log(str.charCodeAt(3)); // Outputs: 97 // ASCII value of character
+
+        console.log(str.substring(3, 7)); // Outputs: agri
+        //strt>end
+        console.log(str.substring(-1, -7)); // Outputs:  // negative values are treated as 0 hence empty string is returned
+        console.log(str.substring(3)); // Outputs: agrima
+        console.log(str.substring(-18)); // outputs: hi agrima // negative values are treated as 0 hence full string is returned
+
+        console.log(str.slice(-9, 18)); // Outputs: hi agrima // similar to substring but can take negative indices
+        //start>end
+        console.log(str.slice(7, 3)); // Outputs:  // if start > end then empty string is returned
+        console.log(str.slice(-7)); // Outputs: agrima // if slice mai -ve no then it cuts from end
+
+        let emptyStr = ""
+        let spaceStr = " "
+        console.log(emptyStr.length); // Outputs: 0
+        console.log(spaceStr.length); // Outputs: 1
+
+        console.log(str.toUpperCase()); // Outputs: HI AGRIMA
+        console.log(str.toLowerCase()); // Outputs: hi agrima
+        console.log(str.concat("!", " Welcome")); // Outputs: hi agrima!Welcome
+        console.log(str.trim()); // Outputs: hi agrima // removes whitespace from start and end
+        console.log(str.replace("hi", "hello")); // Outputs: hello agrima
+        console.log(str.replaceAll("a", "A")); // Outputs: hi AgrimA
+        console.log(str.split("a")); // Outputs: [ 'hi ', 'grim', '' ] // splits string into array based on separator
+        
+
+    </script>
+</body>
+</html>

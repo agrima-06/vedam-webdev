@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let searchQuery = " Learn JavaScript Functions Arrow IIFE ";
+        searchQuery = searchQuery.trim(); // remove whitespace from start and end
+
+        console.log(searchQuery.includes("JavaScript")); // check for javascript
+
+        let low = searchQuery.toLowerCase();
+        let up = searchQuery.toUpperCase();
+        console.log(low); 
+        console.log(up);
+
+        let js = searchQuery.substring (6, 16)
+        console.log(js); // Outputs: JavaScript
+
+        
+        console.log(searchQuery.includes("functions", "arrow", "iife")) 
+
+        console.log(searchQuery.charAt(6))
+        console.log(searchQuery.charCodeAt(1))
+
+        console.log(low.includes("javascript"))
+
+
+        //trimming a str is reqired bcz of whitespace at start and end bcz when any developer is coding then by default tehy think that user i snot giving any space at start and endat start but if user gives space then the code might give some error so to avoid that we trim the string
+
+        
+
+        
+    </script>
+</body>
+</html>
